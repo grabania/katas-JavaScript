@@ -35,3 +35,17 @@ function periodIsLate(last, today, cycleLength) {
 
 console.log(periodIsLate((2016, 6, 13), (2016, 7, 16), 35));
 console.log(periodIsLate((2016, 6, 13), (2016, 7, 16), 28));
+
+// Remove First and Last Character
+// It's pretty straightforward. Your goal is to create a
+// function that removes the first and last characters of a string. You're given one parameter,
+// the original string.You don't have to worry with strings with less than two characters.
+
+function removeChar(str) {
+	return str.substring(1, str.length - 1);
+}
+
+console.log(removeChar('eloquent'));
+console.log(removeChar('country'));
+console.log(removeChar('person'));
+console.log(removeChar('place'));

@@ -216,3 +216,17 @@ console.log(century(1900), 'Testing for year 1900');
 console.log(century(1601), 'Testing for year 1601');
 console.log(century(2000), 'Testing for year 2000');
 console.log(century(89), 'Testing for year 89');
+
+// Remove First and Last Character
+// It's pretty straightforward. Your goal is to create a function that
+// removes the first and last characters of a string. You're given one parameter,
+// the original string.
+// You don't have to worry with strings with less than two characters.
+
+function removeChar(str) {
+	return str.slice(1, -1);
+}
+console.log(removeChar('eloquent'), 'loquen');
+console.log(removeChar('country'), 'ountr');
+console.log(removeChar('place'), 'lac');
+console.log(removeChar('person'), 'erso');

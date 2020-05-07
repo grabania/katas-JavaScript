@@ -341,3 +341,18 @@ console.log(isDivisible(3, 3, 4), false);
 console.log(isDivisible(12, 3, 4), true);
 console.log(isDivisible(8, 3, 4), false);
 console.log(isDivisible(48, 3, 4), true);
+
+// Jenny's secret message
+// Jenny has written a function that returns a greeting for a user.
+// However, she's in love with Johnny, and would like to greet him slightly different.
+// She added a special case to her function, but she made a mistake.
+// Can you help her ?
+
+function greet(name) {
+	return 'Hello, ' + (name == 'Johnny' ? 'my love' : name) + '!';
+}
+
+console.log(greet('Jim'), 'Hello, Jim!');
+console.log(greet('Jane'), 'Hello, Jane!');
+console.log(greet('Simon'), 'Hello, Simon!');
+console.log(greet('Johnny'), 'Hello, my love!');

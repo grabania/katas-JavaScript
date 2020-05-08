@@ -459,8 +459,13 @@ console.log(reverseWords('row row row your boat'), 'boat your row row row');
 // or "¥"(Rust).
 
 function bonusTime(salary, bonus) {
-	return bonus === true ? '\u00A3' + salary * 10 : '\u00A3' + salary;
+	return bonus ? `£${10 * salary}` : `£${salary}`;
 }
+
+// or:
+// function bonusTime(salary, bonus) {
+// 	return bonus === true ? '\u00A3' + salary * 10 : '\u00A3' + salary;
+// }
 
 // or:
 // function bonusTime(salary, bonus) {

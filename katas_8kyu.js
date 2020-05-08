@@ -425,7 +425,7 @@ console.log(invert([ 0 ]), [ 0 ]);
 // Write function avg which calculates average of numbers in given list.
 
 function find_average(array) {
-	return array.reduce((a, b) => a + b) / array.length;
+	return array.reduce((a, b) => a + b, 0) / array.length;
 }
 
 console.log(find_average([ 1, 1, 1 ]), 1);

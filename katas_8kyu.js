@@ -558,3 +558,8 @@ function disemvowel(str) {
 }
 
 console.log(disemvowel('This website is for losers LOL!'), 'Ths wbst s fr lsrs LL!');
+
+// or:
+// function disemvowel(str) {
+// 	return str.replace(/[aeiou]/gi, '');
+// }

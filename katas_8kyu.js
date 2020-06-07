@@ -606,3 +606,24 @@ console.log(isSquare(3), false, '3 is not a square number');
 console.log(isSquare(4), true, '4 is a square number (2 * 2)');
 console.log(isSquare(25), true, '25 is a square number (5 * 5)');
 console.log(isSquare(26), false, '26 is not a square number');
+
+//altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+/*
+Define to_alternating_case(char*) such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase.
+*/
+
+String.prototype.toAlternatingCase = function() {
+	var alternatedCase = '';
+
+	for (i = 0; i < this.length; i++) {
+		if (this[i] === this[i].toLowerCase()) {
+			alternatedCase += this[i].toUpperCase();
+		} else {
+			alternatedCase += this[i].toLowerCase();
+		}
+	}
+
+	return alternatedCase;
+};
+
+console.log('hello world'.toAlternatingCase());
